@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -14,6 +13,7 @@ import NotFound from "./pages/NotFound";
 import { Header } from "./components/Header";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import Haircut from "./pages/Haircut";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +36,7 @@ function AppRoutes() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/chat" element={<Chat />} />
           <Route path="/appointments" element={<Appointments />} />
+          <Route path="/haircut" element={<Haircut />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </motion.div>
