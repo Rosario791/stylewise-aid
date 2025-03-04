@@ -22,13 +22,13 @@ const Profile = () => {
         id: '1',
         name: 'L\'Oréal Men Expert Hydra Energetic',
         lastPurchased: '2 weeks ago',
-        image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80'
+        image: 'https://m.media-amazon.com/images/I/71HarYVShjL._SL1500_.jpg'
       },
       {
         id: '2',
         name: 'L\'Oréal Men Expert Barber Club Beard Oil',
         lastPurchased: '1 month ago',
-        image: 'https://images.unsplash.com/photo-1621607512022-6aecc4fed814?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80'
+        image: 'https://static.chemistwarehouse.com.au/ams/media/pi/85842/ADD6_800.jpg'
       }
     ]
   };

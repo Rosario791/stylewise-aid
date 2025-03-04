@@ -14,7 +14,7 @@ const Products = () => {
       name: 'L\'Oréal Men Expert Hydra Energetic',
       description: 'Anti-fatigue moisturizer with vitamin C that hydrates skin for 24 hours',
       price: 12.99,
-      image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80',
+      image: 'https://m.media-amazon.com/images/I/81q1iFM5P3L.jpg',
       category: 'Face',
       rating: 4.7
     },
@@ -23,7 +23,7 @@ const Products = () => {
       name: 'L\'Oréal Men Expert Barber Club Beard Oil',
       description: 'Nourishing oil that softens beard hair and soothes the skin underneath',
       price: 10.99,
-      image: 'https://images.unsplash.com/photo-1621607512022-6aecc4fed814?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80',
+      image: 'https://www.watsons.sa/cdn/shop/files/ASW200004761_103.jpg?v=1711444115&width=1445',
       category: 'Beard',
       rating: 4.5
     },
@@ -32,7 +32,7 @@ const Products = () => {
       name: 'L\'Oréal Men Expert Carbon Protect Deodorant',
       description: '48-hour protection against odor and white marks with activated charcoal',
       price: 6.99,
-      image: 'https://images.unsplash.com/photo-1617923588638-f8675c11e72b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80',
+      image: 'https://lyko.com/globalassets/product-images/loreal-paris-men-expert-carbon-protect-5in1-roll-on-1184-301-0050_1.jpg?ref=424CF44F08&w=1200&h=1200&quality=75',
       category: 'Body',
       rating: 4.3
     },
@@ -41,7 +41,7 @@ const Products = () => {
       name: 'L\'Oréal Men Expert Pure Charcoal Face Wash',
       description: 'Purifying face wash with charcoal that deeply cleanses and reduces excess oil',
       price: 8.99,
-      image: 'https://images.unsplash.com/photo-1602621776002-9af687d0be8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80',
+      image: 'https://static.chemistwarehouse.com.au/ams/media/pi/92122/ADD8_800.jpg',
       category: 'Face',
       rating: 4.6
     },
@@ -50,7 +50,7 @@ const Products = () => {
       name: 'L\'Oréal Serie Expert Density Advanced Shampoo',
       description: 'Thickening shampoo that makes hair look fuller and denser',
       price: 15.99,
-      image: 'https://images.unsplash.com/photo-1594031118685-72fd3acea693?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80',
+      image: 'https://m.media-amazon.com/images/I/61R5-h6iV4L.jpg',
       category: 'Hair',
       rating: 4.8
     },
@@ -59,7 +59,7 @@ const Products = () => {
       name: 'L\'Oréal Men Expert Hydra Sensitive Moisturizer',
       description: 'Soothing, fragrance-free moisturizer for sensitive skin that calms irritation',
       price: 11.99,
-      image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80',
+      image: 'https://i5.walmartimages.com/seo/L-Oreal-Men-Expert-Hydra-Sensitive-Fortifying-Moisturizer-for-Dry-Sensitive-Skin-50-ml-1-7-oz_aa4db5a6-6934-4762-a39a-efa019f0d47d.d07d669e759417f7982e43f55d42af40.jpeg',
       category: 'Face',
       rating: 4.4
     }
