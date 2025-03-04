@@ -1,6 +1,6 @@
 
 import { motion } from 'framer-motion';
-import { Camera, Activity, Scissors, ShoppingBag, Calendar, ChevronRight } from 'lucide-react';
+import { Camera, Activity, Scissors, ShoppingBag, Calendar, MessageSquare, ChevronRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import FeatureCard from '../components/FeatureCard';
 
@@ -16,10 +16,10 @@ const Index = () => {
       delay: 1
     },
     {
-      icon: Activity,
-      title: 'Smart AI Grooming Assistant',
-      description: 'Get personalized care routines based on your needs',
-      path: '/assistant',
+      icon: MessageSquare,
+      title: 'AI Grooming Assistant',
+      description: 'Chat with our AI to get answers to all your grooming questions',
+      path: '/chat',
       delay: 2
     },
     {

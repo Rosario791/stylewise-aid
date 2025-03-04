@@ -8,6 +8,8 @@ import Index from "./pages/Index";
 import Analysis from "./pages/Analysis";
 import Products from "./pages/Products";
 import Profile from "./pages/Profile";
+import Chat from "./pages/Chat";
+import Appointments from "./pages/Appointments";
 import NotFound from "./pages/NotFound";
 import { Header } from "./components/Header";
 import { motion, AnimatePresence } from "framer-motion";
@@ -32,6 +34,8 @@ function AppRoutes() {
           <Route path="/analysis" element={<Analysis />} />
           <Route path="/products" element={<Products />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/chat" element={<Chat />} />
+          <Route path="/appointments" element={<Appointments />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </motion.div>

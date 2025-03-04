@@ -3,9 +3,11 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Camera, Upload, ChevronRight, Info, RefreshCw } from 'lucide-react';
 import ImageUpload from '../components/ImageUpload';
+import ClimateData from '../components/ClimateData';
 
 const Analysis = () => {
   const [analysisState, setAnalysisState] = useState<'initial' | 'uploading' | 'analyzing' | 'complete'>('initial');
+  const [showClimateData, setShowClimateData] = useState(false);
   const [analysisResults, setAnalysisResults] = useState<null | {
     skinType: string;
     hairType: string;
@@ -28,6 +30,9 @@ const Analysis = () => {
       
       // Simulate analysis time
       setTimeout(() => {
+        // Show climate data after analysis is complete
+        setShowClimateData(true);
+        
         // Mock analysis results
         setAnalysisResults({
           skinType: 'Combination',
@@ -62,6 +67,7 @@ const Analysis = () => {
   const resetAnalysis = () => {
     setAnalysisState('initial');
     setAnalysisResults(null);
+    setShowClimateData(false);
   };
 
   return (
@@ -77,6 +83,9 @@ const Analysis = () => {
           Upload a clear photo of your face and hair to get personalized product recommendations
         </p>
       </motion.div>
+
+      {/* Climate Data - will be shown after analysis */}
+      <ClimateData visible={showClimateData} />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <motion.div
