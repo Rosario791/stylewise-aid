@@ -7,14 +7,14 @@ import ProductCard from '../components/ProductCard';
 const Products = () => {
   const [category, setCategory] = useState<string>('all');
   
-  // Updated product data with corrected images
+  // Productos con imágenes actualizadas
   const products = [
     {
       id: '1',
       name: 'L\'Oréal Men Expert Hydra Energetic',
       description: 'Anti-fatigue moisturizer with vitamin C that hydrates skin for 24 hours',
       price: 12.99,
-      image: 'https://m.media-amazon.com/images/I/81q1iFM5P3L.jpg',
+      image: '/lovable-uploads/bc523a02-e8eb-4eea-98cc-ac065ed511ac.png',
       category: 'Face',
       rating: 4.7
     },
