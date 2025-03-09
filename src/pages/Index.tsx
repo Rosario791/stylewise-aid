@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import {
   Camera,
@@ -110,7 +111,7 @@ const Index = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {features.map((feature) => (
             <FeatureCard
-              key={feature.title} // Se usa 'title' en vez de 'index' para mayor consistencia
+              key={feature.title}
               icon={feature.icon}
               title={feature.title}
               description={feature.description}
@@ -144,10 +145,10 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Image Section */}
+          {/* Image Section - THIS IS THE PART THAT NEEDS TO BE CHANGED */}
           <div className="flex-shrink-0">
             <img
-              src="https://dermaskinshop.com.my/cdn/shop/articles/Oct_2.jpg?v=1695608541"
+              src="https://m.media-amazon.com/images/I/81q1iFM5P3L.jpg"
               alt="Grooming tips and skin care"
               className="w-40 h-40 object-cover rounded-2xl"
             />

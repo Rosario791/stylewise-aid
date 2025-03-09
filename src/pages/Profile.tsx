@@ -1,4 +1,3 @@
-
 import { motion } from 'framer-motion';
 import { User, MapPin, Sun, Droplets, Wind, Settings, LogOut, ArrowRight, Edit } from 'lucide-react';
 

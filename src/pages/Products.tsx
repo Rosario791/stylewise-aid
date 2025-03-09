@@ -7,7 +7,7 @@ import ProductCard from '../components/ProductCard';
 const Products = () => {
   const [category, setCategory] = useState<string>('all');
   
-  // Mock product data
+  // Updated product data
   const products = [
     {
       id: '1',
