@@ -1,64 +1,77 @@
-import { motion } from 'framer-motion';
-import { Camera, Activity, Scissors, ShoppingBag, Calendar, MessageSquare, ChevronRight } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
-import FeatureCard from '../components/FeatureCard';
+import { motion } from "framer-motion";
+import {
+  Camera,
+  MessageSquare,
+  Scissors,
+  ShoppingBag,
+  Calendar,
+  ChevronRight,
+} from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import FeatureCard from "../components/FeatureCard";
 
 const Index = () => {
   const navigate = useNavigate();
-  
+
+  // Definición de características con mejor legibilidad y formato seguro
   const features = [
     {
       icon: Camera,
-      title: 'AI Skin & Hair Diagnosis',
-      description: 'Upload a photo or use your camera for instant analysis',
-      path: '/analysis',
-      delay: 1
+      title: "AI Skin & Hair Diagnosis",
+      description: "Upload a photo or use your camera for instant analysis",
+      path: "/analysis",
+      delay: 1,
     },
     {
       icon: MessageSquare,
-      title: 'AI Grooming Assistant',
-      description: 'Chat with our AI to get answers to all your grooming questions',
-      path: '/chat',
-      delay: 2
+      title: "AI Grooming Assistant",
+      description: "Chat with our AI to get answers to all your grooming questions",
+      path: "/chat",
+      delay: 2,
     },
     {
       icon: Scissors,
-      title: 'AR Haircut Try-On',
-      description: 'Preview different hairstyles with augmented reality',
-      path: '/haircut',
-      delay: 3
+      title: "AR Haircut Try-On",
+      description: "Preview different hairstyles with augmented reality",
+      path: "/haircut",
+      delay: 3,
     },
     {
       icon: ShoppingBag,
-      title: 'Shop L\'Oréal Products',
-      description: 'Browse and purchase recommended grooming products',
-      path: '/products',
-      delay: 4
+      title: "Shop L&apos;Oréal Products", // Se escapa el apóstrofe
+      description: "Browse and purchase recommended grooming products",
+      path: "/products",
+      delay: 4,
     },
     {
       icon: Calendar,
-      title: 'Book Barbershop Appointment',
-      description: 'Schedule appointments with L\'Oréal-affiliated barbershops',
-      path: '/appointments',
-      delay: 5
-    }
+      title: "Book Barbershop Appointment",
+      description: "Schedule appointments with L&apos;Oréal-affiliated barbershops",
+      path: "/appointments",
+      delay: 5,
+    },
   ];
 
   return (
     <div className="pt-6">
+      {/* Hero Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         className="rounded-3xl overflow-hidden mb-8 relative h-72 md:h-96"
       >
+        {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-smartblue-700/90 to-smartblue-500/70 z-10" />
-        <img 
+
+        {/* Background Image */}
+        <img
           src="https://images.unsplash.com/photo-1581382575275-97901c2635b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-          alt="Men's grooming" 
+          alt="Men's grooming products and tools"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        
+
+        {/* Hero Text */}
         <div className="relative z-20 p-6 md:p-10 flex flex-col h-full justify-end">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -66,13 +79,15 @@ const Index = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <h1 className="text-white text-3xl md:text-4xl font-bold mb-2">
-              Smarter Grooming<br />for Modern Men
+              Smarter Grooming
+              <br />
+              for Modern Men
             </h1>
             <p className="text-white/80 md:text-lg mb-4 max-w-lg">
               AI-powered skin & hair analysis with personalized L'Oréal product recommendations
             </p>
-            <button 
-              onClick={() => navigate('/analysis')}
+            <button
+              onClick={() => navigate("/analysis")}
               className="bg-white text-smartblue-700 px-6 py-3 rounded-xl font-medium shadow-lg hover:bg-smartgray-100 transition-colors duration-300 flex items-center"
             >
               Get Started
@@ -82,19 +97,20 @@ const Index = () => {
         </div>
       </motion.div>
 
+      {/* Features Section */}
       <div className="mb-8">
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           className="text-2xl font-bold mb-6 text-smartgray-800"
         >
           Your Personal Care Assistant
         </motion.h2>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {features.map((feature, index) => (
+          {features.map((feature) => (
             <FeatureCard
-              key={index}
+              key={feature.title} // Se usa 'title' en vez de 'index' para mayor consistencia
               icon={feature.icon}
               title={feature.title}
               description={feature.description}
@@ -104,7 +120,8 @@ const Index = () => {
           ))}
         </div>
       </div>
-      
+
+      {/* Weather-Adaptive Grooming Tips Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -112,6 +129,7 @@ const Index = () => {
         className="bg-white rounded-2xl p-6 border border-smartgray-200"
       >
         <div className="flex flex-col md:flex-row gap-6 items-center">
+          {/* Text Section */}
           <div className="flex-1">
             <h3 className="text-xl font-bold mb-2 text-smartgray-800">
               Weather-Adaptive Grooming Tips
@@ -121,14 +139,16 @@ const Index = () => {
             </p>
             <div className="bg-smartblue-50 p-4 rounded-xl border border-smartblue-100">
               <p className="text-smartblue-700 font-medium">
-                Today's Tip: Protect your skin from UV rays with our L'Oréal Men Expert Hydra Energetic SPF moisturizer.
+                Today's Tip: Protect your skin from UV rays with our L&apos;Oréal Men Expert Hydra Energetic SPF moisturizer.
               </p>
             </div>
           </div>
+
+          {/* Image Section */}
           <div className="flex-shrink-0">
-            <img 
-              src="https://dermaskinshop.com.my/cdn/shop/articles/Oct_2.jpg?v=1695608541" 
-              alt="Grooming tips"
+            <img
+              src="https://dermaskinshop.com.my/cdn/shop/articles/Oct_2.jpg?v=1695608541"
+              alt="Grooming tips and skin care"
               className="w-40 h-40 object-cover rounded-2xl"
             />
           </div>
