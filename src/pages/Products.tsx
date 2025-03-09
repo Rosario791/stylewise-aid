@@ -14,7 +14,7 @@ const Products = () => {
       name: 'L\'Oréal Men Expert Hydra Energetic',
       description: 'Anti-fatigue moisturizer with vitamin C that hydrates skin for 24 hours',
       price: 12.99,
-      image: 'https://https://m.media-amazon.com/images/I/81q1iFM5P3L.jpg',
+      image: 'https://m.media-amazon.com/images/I/81q1iFM5P3L.jpg',
       category: 'Face',
       rating: 4.7
     },

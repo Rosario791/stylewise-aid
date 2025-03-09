@@ -16,7 +16,10 @@ const Profile = () => {
     skinType: 'Combination',
     hairType: 'Straight, Medium Thickness',
     concerns: ['Dryness', 'Early signs of thinning', 'UV damage'],
-    recentProducts: [
+  };
+  
+  const profileData = {
+    purchases: [
       {
         id: '1',
         name: 'L\'Oréal Men Expert Hydra Energetic',
@@ -202,7 +205,7 @@ const Profile = () => {
             </div>
             
             <div className="space-y-4">
-              {user.recentProducts.map((product) => (
+              {profileData.purchases.map((product) => (
                 <div 
                   key={product.id}
                   className="flex items-center space-x-4 p-3 rounded-xl hover:bg-smartgray-50 transition-colors"

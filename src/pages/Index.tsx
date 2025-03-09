@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import {
   Camera,
@@ -144,7 +145,7 @@ const Index = () => {
 
           <div className="flex-none">
             <img
-              src="https://dermaskinshop.com.my/cdn/shop/articles/Oct_2.jpg?v=1695608541"
+              src="https://m.media-amazon.com/images/I/71HarYVShjL._SL1500_.jpg"
               alt="Grooming tips and skin care"
               className="w-40 h-40 object-cover rounded-2xl"
             />
