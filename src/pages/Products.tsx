@@ -7,7 +7,7 @@ import ProductCard from '../components/ProductCard';
 const Products = () => {
   const [category, setCategory] = useState<string>('all');
   
-  // Updated product data
+  // Updated product data with corrected images
   const products = [
     {
       id: '1',
