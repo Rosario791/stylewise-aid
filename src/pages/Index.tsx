@@ -127,7 +127,7 @@ const Index = () => {
           </div>
           <div className="flex-shrink-0">
             <img 
-              src="https://m.media-amazon.com/images/I/71HarYVShjL._SL1500_.jpg" 
+              src="https://dermaskinshop.com.my/cdn/shop/articles/Oct_2.jpg?v=1695608541" 
               alt="Grooming tips"
               className="w-40 h-40 object-cover rounded-2xl"
             />
