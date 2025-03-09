@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import {
   Camera,
@@ -14,7 +13,6 @@ import FeatureCard from "../components/FeatureCard";
 const Index = () => {
   const navigate = useNavigate();
 
-  // Definición de características con mejor legibilidad y formato seguro
   const features = [
     {
       icon: Camera,
@@ -39,7 +37,7 @@ const Index = () => {
     },
     {
       icon: ShoppingBag,
-      title: "Shop L&apos;Oréal Products", // Se escapa el apóstrofe
+      title: "Shop L'Oréal Products",
       description: "Browse and purchase recommended grooming products",
       path: "/products",
       delay: 4,
@@ -47,7 +45,7 @@ const Index = () => {
     {
       icon: Calendar,
       title: "Book Barbershop Appointment",
-      description: "Schedule appointments with L&apos;Oréal-affiliated barbershops",
+      description: "Schedule appointments with L'Oréal-affiliated barbershops",
       path: "/appointments",
       delay: 5,
     },
@@ -67,7 +65,7 @@ const Index = () => {
 
         {/* Background Image */}
         <img
-          src="https://images.unsplash.com/photo-1581382575275-97901c2635b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+          src="https://images.unsplash.com/photo-1581382575275-97901c2635b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
           alt="Men's grooming products and tools"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -130,7 +128,6 @@ const Index = () => {
         className="bg-white rounded-2xl p-6 border border-smartgray-200"
       >
         <div className="flex flex-col md:flex-row gap-6 items-center">
-          {/* Text Section */}
           <div className="flex-1">
             <h3 className="text-xl font-bold mb-2 text-smartgray-800">
               Weather-Adaptive Grooming Tips
@@ -140,15 +137,14 @@ const Index = () => {
             </p>
             <div className="bg-smartblue-50 p-4 rounded-xl border border-smartblue-100">
               <p className="text-smartblue-700 font-medium">
-                Today's Tip: Protect your skin from UV rays with our L&apos;Oréal Men Expert Hydra Energetic SPF moisturizer.
+                Today's Tip: Protect your skin from UV rays with our L'Oréal Men Expert Hydra Energetic SPF moisturizer.
               </p>
             </div>
           </div>
 
-          {/* Image Section - THIS IS THE PART THAT NEEDS TO BE CHANGED */}
-          <div className="flex-shrink-0">
+          <div className="flex-none">
             <img
-              src="https://m.media-amazon.com/images/I/81q1iFM5P3L.jpg"
+              src="https://dermaskinshop.com.my/cdn/shop/articles/Oct_2.jpg?v=1695608541"
               alt="Grooming tips and skin care"
               className="w-40 h-40 object-cover rounded-2xl"
             />
